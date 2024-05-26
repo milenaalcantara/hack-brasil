@@ -8,41 +8,32 @@
 import SwiftUI
 
 struct ForumNavBar: View {
-    @State private var date = Date()
-    
-    var body: some View {
-        HStack {
-            Button {
-                
-            } label: {
-                Image(systemName: "calendar")
-                    .foregroundStyle(.cordestaque)
-            }
-            
-            Spacer()
-            Button {
-                
-            } label: {
-                Image(systemName: "magnifyingglass")
-                    .foregroundStyle(.cordestaque)
 
-            }
-            
-            Button {
+        var body: some View {
+            HStack {
+                Button { } label: {
+                    Image(systemName: "calendar.badge.plus")
+                }
                 
-            } label: {
-                Image(systemName: "bubble.left")
-                    .foregroundStyle(.cordestaque)
-
+                Spacer()
+                Button { } label: {
+                    Image(systemName: "magnifyingglass")
+                }
+                
+                Button { } label: {
+                    Image(systemName: "bubble.left")
+                }
+                .frame(height: 200)
             }
-            .frame(height: 200)
+            .foregroundStyle(.kelpwhite)
+            .font(.system(size: 25))
+            .padding(.horizontal)
+            .frame(height: 56)
+            .frame(maxWidth: .infinity)
+            .background(.corfundo)
         }
-        .padding(.horizontal)
-        .frame(height: 56)
-        .frame(maxWidth: .infinity)
-        .background(.corfundo)
-    }
 }
+
 struct SwiftUIWrapper<T: View>: UIViewControllerRepresentable {
     let content: () -> T
     func makeUIViewController(context: Context) -> UIHostingController<T> {
