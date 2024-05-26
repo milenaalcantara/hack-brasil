@@ -14,6 +14,8 @@
 		3696D2F72C034CAB00E9CDC0 /* hackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D2F62C034CAB00E9CDC0 /* hackTests.swift */; };
 		3696D3012C034CAB00E9CDC0 /* hackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D3002C034CAB00E9CDC0 /* hackUITests.swift */; };
 		3696D3032C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */; };
+		369775482C038E9A00A3EABF /* hackdb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 369775462C038E9A00A3EABF /* hackdb.xcdatamodeld */; };
+		3697754B2C03902200A3EABF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697754A2C03902200A3EABF /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		3696D2FC2C034CAB00E9CDC0 /* hackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3696D3002C034CAB00E9CDC0 /* hackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackUITests.swift; sourceTree = "<group>"; };
 		3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		369775472C038E9A00A3EABF /* hackdb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hackdb.xcdatamodel; sourceTree = "<group>"; };
+		3697754A2C03902200A3EABF /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,12 @@
 		3696D2E42C034CAA00E9CDC0 /* hack */ = {
 			isa = PBXGroup;
 			children = (
+				369775492C038F2E00A3EABF /* Persistence */,
 				3696D2E52C034CAA00E9CDC0 /* hackApp.swift */,
 				3696D2E72C034CAA00E9CDC0 /* ContentView.swift */,
 				3696D2E92C034CAB00E9CDC0 /* Assets.xcassets */,
 				3696D2EB2C034CAB00E9CDC0 /* Preview Content */,
+				369775462C038E9A00A3EABF /* hackdb.xcdatamodeld */,
 			);
 			path = hack;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */,
 			);
 			path = hackUITests;
+			sourceTree = "<group>";
+		};
+		369775492C038F2E00A3EABF /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				3697754A2C03902200A3EABF /* PersistenceController.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369775482C038E9A00A3EABF /* hackdb.xcdatamodeld in Sources */,
 				3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */,
 				3696D2E62C034CAA00E9CDC0 /* hackApp.swift in Sources */,
+				3697754B2C03902200A3EABF /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +626,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		369775462C038E9A00A3EABF /* hackdb.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				369775472C038E9A00A3EABF /* hackdb.xcdatamodel */,
+			);
+			currentVersion = 369775472C038E9A00A3EABF /* hackdb.xcdatamodel */;
+			name = hackdb.xcdatamodeld;
+			path = "/Users/milenaalcantara/Desktop/projects/hack-brasil/HackApp/hack-brasil/hack/hackdb.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3696D2DA2C034CAA00E9CDC0 /* Project object */;
 }
