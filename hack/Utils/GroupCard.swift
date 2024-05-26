@@ -9,30 +9,33 @@ import SwiftUI
 
 struct GroupCard: View {
     var body: some View {
-        ZStack(alignment: .bottom) {
-            Image(systemName: "house")
+        VStack(spacing: 0) {
+            Image("cardimg")
                 .resizable()
-                .scaledToFit()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.yellow)
+                .scaledToFill()
+                .frame(height: 137)
+                .frame(maxWidth: .infinity)
             
-            VStack(alignment: .leading) {
-                Text("group title")
-                HStack {
-                    Text("5 membros")
-                    Spacer()
-                    CapsuleTag(text: "Silver", textColor: .primary, color: .gray)
-                }
-
-
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Group title")
+                    .foregroundStyle(.kelpwhite)
+                    .font(.headline)
+                    .bold()
+                
+                Text("5 membros")
+                    .foregroundStyle(.kelpwhite)
+                    .font(.body)
+                
+                CapsuleTag(text: "Silver", textColor: .corfundo, color: .accentColor)
+                
             }
             .padding()
-            .frame(maxWidth: .infinity)
-            .frame(height: 71)
-            .background(.blue)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(height: 97)
+            .background(.corfundo)
             
         }
-        .frame(width: 234, height: 170)
+        .frame(width: 234, height: 234)
         .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }

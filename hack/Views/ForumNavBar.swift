@@ -16,6 +16,7 @@ struct ForumNavBar: View {
                 
             } label: {
                 Image(systemName: "calendar")
+                    .foregroundStyle(.cordestaque)
             }
             
             Spacer()
@@ -23,19 +24,23 @@ struct ForumNavBar: View {
                 
             } label: {
                 Image(systemName: "magnifyingglass")
+                    .foregroundStyle(.cordestaque)
+
             }
             
             Button {
                 
             } label: {
                 Image(systemName: "bubble.left")
+                    .foregroundStyle(.cordestaque)
+
             }
             .frame(height: 200)
         }
         .padding(.horizontal)
         .frame(height: 56)
         .frame(maxWidth: .infinity)
-        .background(.gray.opacity(0.5))
+        .background(.corfundo)
     }
 }
 struct SwiftUIWrapper<T: View>: UIViewControllerRepresentable {

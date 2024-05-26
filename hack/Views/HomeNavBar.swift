@@ -16,13 +16,15 @@ struct HomeNavBar: View {
                 
             } label: {
                 Image(systemName: "magnifyingglass")
+                    .foregroundStyle(.cordestaque)
+                    .font(.system(size: 35))
             }
             .frame(height: 200)
         }
         .padding(.horizontal)
         .frame(height: 96)
         .frame(maxWidth: .infinity)
-        .background(.gray.opacity(0.5))
+        .background(.corfundo)
     }
 }
 

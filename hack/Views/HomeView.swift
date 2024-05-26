@@ -12,28 +12,36 @@ struct HomeView: View {
     @State var searchText: String = ""
     
     var body: some View {
-        HomeNavBar()
-            .padding(.top)
-            .ignoresSafeArea()
         
-//        Spacer()
         
-        VStack(alignment: .leading, spacing: 20) {
+        ZStack{
+//            Color.corfundo
+//                .ignoresSafeArea()
             
-            Text("Suas Comunidades")
-                .font(.largeTitle)
-            
-            HorizontalScrollView(title: "Mentorias")
-            
-            HorizontalScrollView(title: "Tutoriais")
-            
+            VStack {
+                HomeNavBar()
+                    .padding(.top)
+                    .ignoresSafeArea()
+                
+                VStack(alignment: .leading, spacing: 20) {
+                    
+                    Text("Suas Comunidades")
+                        .foregroundStyle(.kelpwhite)
+                        .font(.largeTitle)
+                    
+                    HorizontalScrollView(title: "Mentorias")
+                    
+                    HorizontalScrollView(title: "Tutoriais")
+                    
+                }
+                .padding()
+                
+                Spacer()
+                
+                //        .searchable(text: $searchText)
+                
+            }
         }
-        .padding()
-        
-        Spacer()
-        
-//        .searchable(text: $searchText)
-        
     }
 }
 

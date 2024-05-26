@@ -19,9 +19,10 @@ struct UserIdView: View {
                 }
             VStack {
                Text("Username")
+                    .foregroundStyle(.kelpwhite)
                     .font(.system(size: 12))
                 
-                CapsuleTag(text: "Mentora", textColor: .primary, color: .blue)
+                CapsuleTag(text: "Mentora", textColor: .primary, color: .accentColor)
             }
         }
     }

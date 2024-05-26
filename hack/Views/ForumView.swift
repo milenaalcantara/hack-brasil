@@ -15,23 +15,29 @@ struct ForumView: View {
         VStack {
             ForumNavBar()
             
-            
-            List {
-                LevelsView()
-                    .padding(.bottom)
+            ZStack {
+//                Color.corfundo
+//                    .ignoresSafeArea()
                 
-                ForEach(forumPosts, id: \.self) { post in
-                    ForumPostCard()
+                List {
+                    LevelsView()
                         .listRowInsets(EdgeInsets())
                         .padding(.bottom)
+                        .listRowBackground(Color.clear)
+
+                    ForEach(forumPosts, id: \.self) { post in
+                        ForumPostCard()
+                            .listRowBackground(Color.clear)
+                            .listRowInsets(EdgeInsets())
+                            .padding(.bottom)
+                    }
                 }
+                .listStyle(.plain)
+                .listRowSeparator(.hidden)
+                .listRowInsets(.none)
+                
             }
-            .listStyle(.plain)
-            .listRowSeparator(.hidden)
-            .listRowInsets(.none)
-            
         }
-        
     }
 }
 

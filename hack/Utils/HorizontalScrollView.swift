@@ -15,6 +15,7 @@ struct HorizontalScrollView: View {
     var body: some View {
         
         Text(title)
+            .foregroundStyle(.kelpwhite)
             .font(.title)
         
         ScrollView(.horizontal) {

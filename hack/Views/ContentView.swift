@@ -12,23 +12,29 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            ForumView()
-                .tabItem {
-                    Label("Comunidades", systemImage: "person.3.fill")
+            Group {
+                ForumView()
+                    .tabItem {
+                        Label("Comunidades", systemImage: "person.2.fill")
+                    }
+                
+                NavigationStack {
+                    HomeView()
                 }
-                        
-            NavigationStack {
-                HomeView()
-            }
-            .tabItem {
-                Label("Explorar", systemImage: "chart.bar")
-            }
-            
-            Text("")
                 .tabItem {
-                    Label("Perfil", systemImage: "person.crop.circle.fill")
+                    Label("Explorar", systemImage: "sparkle.magnifyingglass")
                 }
+                
+                Text("")
+                    .tabItem {
+                        Label("Perfil", systemImage: "person.crop.circle.fill")
+                    }
+            }
+            .toolbarBackground(Color.corfundo, for: .tabBar)
+            .toolbarBackground(.visible, for: .tabBar)
         }
+
+
         
         
 //        Button {

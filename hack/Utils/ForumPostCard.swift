@@ -17,32 +17,42 @@ struct ForumPostCard: View {
         VStack(alignment: .leading) {
             UserIdView()
             
-            Image(systemName: "house")
-               .resizable()
-                .scaledToFit()
-                .frame(maxWidth: .infinity)                 .frame(maxHeight: 220)
-                .background(.yellow)
-                .padding(.vertical)
-            
             Text(textBody)
                 .font(.system(size: 12))
             
-            Text("data")
-                .frame(maxWidth: .infinity, alignment: .trailing)
+            Image("forumimg")
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: .infinity)
+                .frame(maxHeight: 220)
+                .padding(.vertical)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+
+    
+            Divider()
+                .padding(.horizontal, -16)
             
             HStack {
                 Button {
                     //
                 } label: {
-                    Text("like")
+                    Image(systemName: "heart")
+                        .font(.system(size: 20))
+                        .foregroundStyle(.gray)
                 }
                 
                 Button {
                     seeComments.toggle()
                 } label: {
-                    Text("comment")
+                    Image(systemName: "bubble.left")
+                        .font(.system(size: 20))
+                        .foregroundStyle(.gray)
                 }
             }
+
+            Divider()
+                .padding(.bottom)
+                .padding(.horizontal, -16)
             
             HStack {
                 TextField("Escreva um comentário...", text: $newComment)
@@ -50,6 +60,7 @@ struct ForumPostCard: View {
                     //
                 } label: {
                     Image(systemName: "camera")
+                        .foregroundStyle(.kelppurple)
                 }
                 
                 Button {

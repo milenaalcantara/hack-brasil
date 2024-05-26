@@ -18,12 +18,12 @@ struct CapsuleTag: View {
                 .foregroundStyle(textColor)
                 .font(.system(size: 13))
         }
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 15)
         .padding(.vertical, 5)
         .background {
             Capsule(style: .circular)
                 .strokeBorder(color, lineWidth: 0.8)
-                .background(Capsule().fill(color.opacity(0.2)))
+                .background(Capsule().fill(color))
         }
     }
 }
