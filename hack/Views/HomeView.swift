@@ -46,7 +46,7 @@ struct HomeView: View {
                 } label: {
                     Image(systemName: "magnifyingglass")
                         .foregroundStyle(.cordestaque)
-                        .font(.system(size: 25))
+                        .font(.system(size: 20))
                 }
             }
         }

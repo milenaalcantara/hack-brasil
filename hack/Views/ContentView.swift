@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var count = 0
     var body: some View {
         
         TabView {
@@ -35,20 +34,9 @@ struct ContentView: View {
             .toolbarBackground(Color.corfundo, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
         }
-        
-        
-        
-        
-        //        Button {
-        //            increment()
-        //        } label: {
-        //            Text("count: \(count)")
-        //        }
+
     }
-    
-    func increment() {
-        count+=1
-    }
+
 }
 
 #Preview {

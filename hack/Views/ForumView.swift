@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ForumView: View {
-    
+    @Environment(\.dismiss) var dismiss
     var forumPosts: [Int] = [1, 2, 3]
     
     var body: some View {
@@ -42,8 +42,16 @@ struct ForumView: View {
         .navigationTitle(" ")
         .toolbar {
             ToolbarItem (placement: .topBarLeading) {
-                Button { } label: {
-                    Image(systemName: "calendar.badge.plus")
+                HStack {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "chevron.left")
+                    }
+                    
+                    Button { } label: {
+                        Image(systemName: "calendar.badge.plus")
+                    }
                 }
             }
             
