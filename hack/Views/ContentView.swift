@@ -12,21 +12,21 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            Text("")
+            ForumView()
                 .tabItem {
-                    Label("abc", systemImage: "person.3.fill")
+                    Label("Comunidades", systemImage: "person.3.fill")
                 }
                         
             NavigationStack {
                 HomeView()
             }
             .tabItem {
-                Label("abc", systemImage: "chart.bar")
+                Label("Explorar", systemImage: "chart.bar")
             }
             
             Text("")
                 .tabItem {
-                    Label("abc", systemImage: "person.crop.circle.fill")
+                    Label("Perfil", systemImage: "person.crop.circle.fill")
                 }
         }
         

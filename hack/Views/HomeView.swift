@@ -12,6 +12,11 @@ struct HomeView: View {
     @State var searchText: String = ""
     
     var body: some View {
+        HomeNavBar()
+            .padding(.top)
+            .ignoresSafeArea()
+        
+//        Spacer()
         
         VStack(alignment: .leading, spacing: 20) {
             
@@ -21,27 +26,12 @@ struct HomeView: View {
             HorizontalScrollView(title: "Mentorias")
             
             HorizontalScrollView(title: "Tutoriais")
+            
         }
         .padding()
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                UserIdView()
-                    .padding(.vertical)
-            }
-            
-            
-            ToolbarItem {
-                Button {
-                    
-                } label: {
-                    Image(systemName: "magnifyingglass")
-                }
-                .frame(height: 200)
-            }
-        }
-        .toolbarBackground(Color.gray, for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
-
+        
+        Spacer()
+        
 //        .searchable(text: $searchText)
         
     }

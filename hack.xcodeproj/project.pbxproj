@@ -22,6 +22,8 @@
 		B60EC3E82C03A0B700987A3B /* CapsuleTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E72C03A0B700987A3B /* CapsuleTag.swift */; };
 		B60EC3EA2C03A42D00987A3B /* UserIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E92C03A42D00987A3B /* UserIdView.swift */; };
 		B60EC3ED2C03A93E00987A3B /* GroupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3EC2C03A93E00987A3B /* GroupCard.swift */; };
+		B60EC3EF2C03B18E00987A3B /* HomeNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3EE2C03B18E00987A3B /* HomeNavBar.swift */; };
+		B60EC3F12C03B62700987A3B /* ForumNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3F02C03B62700987A3B /* ForumNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		B60EC3E72C03A0B700987A3B /* CapsuleTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleTag.swift; sourceTree = "<group>"; };
 		B60EC3E92C03A42D00987A3B /* UserIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdView.swift; sourceTree = "<group>"; };
 		B60EC3EC2C03A93E00987A3B /* GroupCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCard.swift; sourceTree = "<group>"; };
+		B60EC3EE2C03B18E00987A3B /* HomeNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavBar.swift; sourceTree = "<group>"; };
+		B60EC3F02C03B62700987A3B /* ForumNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 				3696D2E72C034CAA00E9CDC0 /* ContentView.swift */,
 				B60EC3DC2C038FCF00987A3B /* HomeView.swift */,
 				B60EC3E12C03934100987A3B /* ForumView.swift */,
+				B60EC3EE2C03B18E00987A3B /* HomeNavBar.swift */,
+				B60EC3F02C03B62700987A3B /* ForumNavBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,10 +328,12 @@
 				B60EC3DD2C038FCF00987A3B /* HomeView.swift in Sources */,
 				B60EC3E42C0395FB00987A3B /* LevelsView.swift in Sources */,
 				B60EC3E62C03968300987A3B /* ForumPostCard.swift in Sources */,
+				B60EC3F12C03B62700987A3B /* ForumNavBar.swift in Sources */,
 				B60EC3E02C03920300987A3B /* HorizontalScrollView.swift in Sources */,
 				B60EC3E82C03A0B700987A3B /* CapsuleTag.swift in Sources */,
 				B60EC3E22C03934100987A3B /* ForumView.swift in Sources */,
 				3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */,
+				B60EC3EF2C03B18E00987A3B /* HomeNavBar.swift in Sources */,
 				B60EC3ED2C03A93E00987A3B /* GroupCard.swift in Sources */,
 				B60EC3EA2C03A42D00987A3B /* UserIdView.swift in Sources */,
 				3696D2E62C034CAA00E9CDC0 /* hackApp.swift in Sources */,
