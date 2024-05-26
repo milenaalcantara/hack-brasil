@@ -15,6 +15,16 @@
 		3696D2F72C034CAB00E9CDC0 /* hackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D2F62C034CAB00E9CDC0 /* hackTests.swift */; };
 		3696D3012C034CAB00E9CDC0 /* hackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D3002C034CAB00E9CDC0 /* hackUITests.swift */; };
 		3696D3032C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */; };
+		B60EC3DD2C038FCF00987A3B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3DC2C038FCF00987A3B /* HomeView.swift */; };
+		B60EC3E02C03920300987A3B /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3DF2C03920300987A3B /* HorizontalScrollView.swift */; };
+		B60EC3E22C03934100987A3B /* ForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E12C03934100987A3B /* ForumView.swift */; };
+		B60EC3E42C0395FB00987A3B /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E32C0395FB00987A3B /* LevelsView.swift */; };
+		B60EC3E62C03968300987A3B /* ForumPostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E52C03968300987A3B /* ForumPostCard.swift */; };
+		B60EC3E82C03A0B700987A3B /* CapsuleTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E72C03A0B700987A3B /* CapsuleTag.swift */; };
+		B60EC3EA2C03A42D00987A3B /* UserIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E92C03A42D00987A3B /* UserIdView.swift */; };
+		B60EC3ED2C03A93E00987A3B /* GroupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3EC2C03A93E00987A3B /* GroupCard.swift */; };
+		B60EC3EF2C03B18E00987A3B /* HomeNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3EE2C03B18E00987A3B /* HomeNavBar.swift */; };
+		B60EC3F12C03B62700987A3B /* ForumNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3F02C03B62700987A3B /* ForumNavBar.swift */; };
 		3697754B2C03902200A3EABF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697754A2C03902200A3EABF /* PersistenceController.swift */; };
 		3697754E2C0397E200A3EABF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697754D2C0397E200A3EABF /* CustomButton.swift */; };
 		369775522C039FF200A3EABF /* PresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369775512C039FF200A3EABF /* PresentationView.swift */; };
@@ -49,6 +59,16 @@
 		3696D2FC2C034CAB00E9CDC0 /* hackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3696D3002C034CAB00E9CDC0 /* hackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackUITests.swift; sourceTree = "<group>"; };
 		3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B60EC3DC2C038FCF00987A3B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B60EC3DF2C03920300987A3B /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
+		B60EC3E12C03934100987A3B /* ForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumView.swift; sourceTree = "<group>"; };
+		B60EC3E32C0395FB00987A3B /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
+		B60EC3E52C03968300987A3B /* ForumPostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostCard.swift; sourceTree = "<group>"; };
+		B60EC3E72C03A0B700987A3B /* CapsuleTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleTag.swift; sourceTree = "<group>"; };
+		B60EC3E92C03A42D00987A3B /* UserIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdView.swift; sourceTree = "<group>"; };
+		B60EC3EC2C03A93E00987A3B /* GroupCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCard.swift; sourceTree = "<group>"; };
+		B60EC3EE2C03B18E00987A3B /* HomeNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavBar.swift; sourceTree = "<group>"; };
+		B60EC3F02C03B62700987A3B /* ForumNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumNavBar.swift; sourceTree = "<group>"; };
 		3697754A2C03902200A3EABF /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		3697754D2C0397E200A3EABF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		369775512C039FF200A3EABF /* PresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationView.swift; sourceTree = "<group>"; };
@@ -106,8 +126,9 @@
 				3697754F2C039FAC00A3EABF /* Views */,
 				3697754C2C0397CA00A3EABF /* Components */,
 				369775492C038F2E00A3EABF /* Persistence */,
+				B60EC3DE2C0391B300987A3B /* Utils */,
+				B60EC3DB2C038F1400987A3B /* Views */,
 				3696D2E52C034CAA00E9CDC0 /* hackApp.swift */,
-				3696D2E72C034CAA00E9CDC0 /* ContentView.swift */,
 				3696D2E92C034CAB00E9CDC0 /* Assets.xcassets */,
 				3696D2EB2C034CAB00E9CDC0 /* Preview Content */,
 				3668CF492C03CA8A00279637 /* hackdb.xcdatamodeld */,
@@ -138,6 +159,31 @@
 				3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */,
 			);
 			path = hackUITests;
+			sourceTree = "<group>";
+		};
+		B60EC3DB2C038F1400987A3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3696D2E72C034CAA00E9CDC0 /* ContentView.swift */,
+				B60EC3DC2C038FCF00987A3B /* HomeView.swift */,
+				B60EC3E12C03934100987A3B /* ForumView.swift */,
+				B60EC3EE2C03B18E00987A3B /* HomeNavBar.swift */,
+				B60EC3F02C03B62700987A3B /* ForumNavBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B60EC3DE2C0391B300987A3B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B60EC3DF2C03920300987A3B /* HorizontalScrollView.swift */,
+				B60EC3E32C0395FB00987A3B /* LevelsView.swift */,
+				B60EC3E52C03968300987A3B /* ForumPostCard.swift */,
+				B60EC3E72C03A0B700987A3B /* CapsuleTag.swift */,
+				B60EC3E92C03A42D00987A3B /* UserIdView.swift */,
+				B60EC3EC2C03A93E00987A3B /* GroupCard.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		369775492C038F2E00A3EABF /* Persistence */ = {
@@ -324,8 +370,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3668CF4B2C03CA8A00279637 /* hackdb.xcdatamodeld in Sources */,
+				B60EC3DD2C038FCF00987A3B /* HomeView.swift in Sources */,
+				B60EC3E42C0395FB00987A3B /* LevelsView.swift in Sources */,
+				B60EC3E62C03968300987A3B /* ForumPostCard.swift in Sources */,
+				B60EC3F12C03B62700987A3B /* ForumNavBar.swift in Sources */,
+				B60EC3E02C03920300987A3B /* HorizontalScrollView.swift in Sources */,
+				B60EC3E82C03A0B700987A3B /* CapsuleTag.swift in Sources */,
+				B60EC3E22C03934100987A3B /* ForumView.swift in Sources */,
 				3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */,
 				369775522C039FF200A3EABF /* PresentationView.swift in Sources */,
+				B60EC3EF2C03B18E00987A3B /* HomeNavBar.swift in Sources */,
+				B60EC3ED2C03A93E00987A3B /* GroupCard.swift in Sources */,
+				B60EC3EA2C03A42D00987A3B /* UserIdView.swift in Sources */,
 				3696D2E62C034CAA00E9CDC0 /* hackApp.swift in Sources */,
 				3697754B2C03902200A3EABF /* PersistenceController.swift in Sources */,
 				3697754E2C0397E200A3EABF /* CustomButton.swift in Sources */,
