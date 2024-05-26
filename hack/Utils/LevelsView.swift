@@ -10,7 +10,7 @@ import SwiftUI
 struct LevelsView: View {
     
     var levels: [Int] = [1,2,3,4,5]
-
+    var currentLevel: Int = 1
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -35,6 +35,7 @@ struct LevelsView: View {
                                     Circle()
                                         .stroke(.black)
                                 }
+                                
                             
                             Text("texto")
                         }
