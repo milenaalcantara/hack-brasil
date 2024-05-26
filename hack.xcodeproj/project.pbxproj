@@ -20,6 +20,7 @@
 		B60EC3E42C0395FB00987A3B /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E32C0395FB00987A3B /* LevelsView.swift */; };
 		B60EC3E62C03968300987A3B /* ForumPostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E52C03968300987A3B /* ForumPostCard.swift */; };
 		B60EC3E82C03A0B700987A3B /* CapsuleTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E72C03A0B700987A3B /* CapsuleTag.swift */; };
+		B60EC3EA2C03A42D00987A3B /* UserIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3E92C03A42D00987A3B /* UserIdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B60EC3E32C0395FB00987A3B /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
 		B60EC3E52C03968300987A3B /* ForumPostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostCard.swift; sourceTree = "<group>"; };
 		B60EC3E72C03A0B700987A3B /* CapsuleTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleTag.swift; sourceTree = "<group>"; };
+		B60EC3E92C03A42D00987A3B /* UserIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				B60EC3E32C0395FB00987A3B /* LevelsView.swift */,
 				B60EC3E52C03968300987A3B /* ForumPostCard.swift */,
 				B60EC3E72C03A0B700987A3B /* CapsuleTag.swift */,
+				B60EC3E92C03A42D00987A3B /* UserIdView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				B60EC3E82C03A0B700987A3B /* CapsuleTag.swift in Sources */,
 				B60EC3E22C03934100987A3B /* ForumView.swift in Sources */,
 				3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */,
+				B60EC3EA2C03A42D00987A3B /* UserIdView.swift in Sources */,
 				3696D2E62C034CAA00E9CDC0 /* hackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,21 +15,7 @@ struct ForumPostCard: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Image(systemName: "house")
-                    .frame(width: 35, height: 35)
-                    .clipShape(Circle())
-                    .background {
-                        Circle()
-                            .stroke(.black)
-                    }
-                VStack {
-                   Text("Username")
-                        .font(.system(size: 12))
-                    
-                    CapsuleTag(text: "Mentora", textColor: .primary, color: .blue)
-                }
-            }
+            UserIdView()
             
             Image(systemName: "house")
                .resizable()
