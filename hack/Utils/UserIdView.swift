@@ -8,26 +8,26 @@
 import SwiftUI
 
 struct UserIdView: View {
+    var textColor: Color
+    var capsuleColor: Color
+    
     var body: some View {
         HStack {
-            Image(systemName: "house")
-                .frame(width: 35, height: 35)
+            Image("avatar")
+                .frame(width: 45, height: 45)
                 .clipShape(Circle())
-                .background {
-                    Circle()
-                        .stroke(.black)
-                }
-            VStack {
-               Text("Username")
-                    .foregroundStyle(.kelpwhite)
-                    .font(.system(size: 12))
                 
-                CapsuleTag(text: "Mentora", textColor: .primary, color: .accentColor)
+            VStack (spacing: 5) {
+               Text("Username")
+                    .foregroundStyle(textColor)
+                    .font(.headline)
+                
+                CapsuleTag(text: "Mentora", textColor: .primary, color: capsuleColor)
             }
         }
     }
 }
-
-#Preview {
-    UserIdView()
-}
+//
+//#Preview {
+//    UserIdView()
+//}

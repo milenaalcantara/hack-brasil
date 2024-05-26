@@ -29,6 +29,7 @@
 		B60EC3ED2C03A93E00987A3B /* GroupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3EC2C03A93E00987A3B /* GroupCard.swift */; };
 		B60EC3EF2C03B18E00987A3B /* HomeNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3EE2C03B18E00987A3B /* HomeNavBar.swift */; };
 		B60EC3F12C03B62700987A3B /* ForumNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3F02C03B62700987A3B /* ForumNavBar.swift */; };
+		B60EC3F32C03E61900987A3B /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60EC3F22C03E61900987A3B /* CapsuleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		B60EC3EC2C03A93E00987A3B /* GroupCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCard.swift; sourceTree = "<group>"; };
 		B60EC3EE2C03B18E00987A3B /* HomeNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavBar.swift; sourceTree = "<group>"; };
 		B60EC3F02C03B62700987A3B /* ForumNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumNavBar.swift; sourceTree = "<group>"; };
+		B60EC3F22C03E61900987A3B /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				B60EC3E72C03A0B700987A3B /* CapsuleTag.swift */,
 				B60EC3E92C03A42D00987A3B /* UserIdView.swift */,
 				B60EC3EC2C03A93E00987A3B /* GroupCard.swift */,
+				B60EC3F22C03E61900987A3B /* CapsuleButton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				3668CF4E2C03E93D00279637 /* ChoosePerfilView.swift in Sources */,
 				B60EC3E82C03A0B700987A3B /* CapsuleTag.swift in Sources */,
 				B60EC3E22C03934100987A3B /* ForumView.swift in Sources */,
+				B60EC3F32C03E61900987A3B /* CapsuleButton.swift in Sources */,
 				3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */,
 				369775522C039FF200A3EABF /* PresentationView.swift in Sources */,
 				B60EC3EF2C03B18E00987A3B /* HomeNavBar.swift in Sources */,

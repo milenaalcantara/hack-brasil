@@ -15,7 +15,7 @@ struct ForumPostCard: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            UserIdView()
+            UserIdView(textColor: .primary, capsuleColor: .yellow)
             
             Text(textBody)
                 .font(.system(size: 12))
@@ -25,7 +25,6 @@ struct ForumPostCard: View {
                 .scaledToFit()
                 .frame(maxWidth: .infinity)
                 .frame(maxHeight: 220)
-                .padding(.vertical)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
 
     
@@ -33,9 +32,7 @@ struct ForumPostCard: View {
                 .padding(.horizontal, -16)
             
             HStack {
-                Button {
-                    //
-                } label: {
+                Button { } label: {
                     Image(systemName: "heart")
                         .font(.system(size: 20))
                         .foregroundStyle(.gray)
@@ -48,6 +45,7 @@ struct ForumPostCard: View {
                         .font(.system(size: 20))
                         .foregroundStyle(.gray)
                 }
+                .padding(.horizontal)
             }
 
             Divider()
@@ -56,29 +54,27 @@ struct ForumPostCard: View {
             
             HStack {
                 TextField("Escreva um comentário...", text: $newComment)
-                Button {
-                    //
-                } label: {
+                Button { } label: {
                     Image(systemName: "camera")
                         .foregroundStyle(.kelppurple)
                 }
                 
-                Button {
-                    
-                } label: {
+                Button { } label: {
                     Text("Enviar")
+                        .font(.caption2)
                 }
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(CapsuleButtonStyle(foregroundColor: .kelpwhite, backgroundColor: .kelppurple, padding: 16))
             }
+            .padding(.vertical, 4)
             .padding(.horizontal)
             .clipShape(Capsule())
             .background {
                 Capsule()
-                    .stroke(.black)
+                    .stroke(.gray)
             }
         }
         .padding()
-        .background(.gray.opacity(0.5))
+//        .background(.gray.opacity(0.5))
     }
 }
 

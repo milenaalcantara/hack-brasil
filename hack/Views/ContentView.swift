@@ -18,14 +18,16 @@ struct ContentView: View {
         
         TabView {
             Group {
-                ForumView()
-                    .tabItem {
-                        Label("Comunidades", systemImage: "person.2.fill")
-                    }
                 
                 NavigationStack {
                     HomeView()
                 }
+                .tabItem {
+                    Label("Comunidades", systemImage: "person.2.fill")
+                }
+                
+                
+                Text("")
                 .tabItem {
                     Label("Explorar", systemImage: "sparkle.magnifyingglass")
                 }

@@ -19,7 +19,7 @@ struct CapsuleTag: View {
                 .font(.system(size: 13))
         }
         .padding(.horizontal, 15)
-        .padding(.vertical, 5)
+        .padding(.vertical, 4)
         .background {
             Capsule(style: .circular)
                 .strokeBorder(color, lineWidth: 0.8)

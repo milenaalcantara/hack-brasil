@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State var goesToForum = false
     @State var searchText: String = ""
     
     var body: some View {
@@ -17,31 +18,46 @@ struct HomeView: View {
         ZStack{
 //            Color.corfundo
 //                .ignoresSafeArea()
-            
-            VStack {
-                HomeNavBar()
-                    .padding(.top)
-                    .ignoresSafeArea()
+    
                 
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 10) {
                     
                     Text("Suas Comunidades")
-                        .foregroundStyle(.kelpwhite)
-                        .font(.largeTitle)
+                        .font(.title)
                     
-                    HorizontalScrollView(title: "Mentorias")
+                    HorizontalScrollView(title: "Mentorias", goesToForum: $goesToForum)
                     
-                    HorizontalScrollView(title: "Tutoriais")
+                    HorizontalScrollView(title: "Tutoriais", goesToForum: $goesToForum)
                     
                 }
                 .padding()
                 
                 Spacer()
-                
-                //        .searchable(text: $searchText)
-                
+
+        }
+        .navigationTitle(" ")
+        .toolbar {
+            ToolbarItem (placement: .topBarLeading) {
+                UserIdView(textColor: .kelpwhite, capsuleColor: .accentColor)
+            }
+            
+            ToolbarItem (placement: .topBarTrailing) {
+                Button {
+                } label: {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundStyle(.cordestaque)
+                        .font(.system(size: 25))
+                }
             }
         }
+        .toolbarBackground(.corfundo, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .fullScreenCover(isPresented: $goesToForum) {
+            NavigationStack {
+                ForumView()
+            }
+        }
+
     }
 }
 
