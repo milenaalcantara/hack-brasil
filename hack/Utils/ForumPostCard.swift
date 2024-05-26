@@ -27,11 +27,7 @@ struct ForumPostCard: View {
                    Text("Username")
                         .font(.system(size: 12))
                     
-                    Text("Mentora")
-                        .font(.system(size: 8))
-                        .padding(.vertical, 4)
-                        .padding(.horizontal, 10)
-                        .background(Capsule().foregroundStyle(.yellow))
+                    CapsuleTag(text: "Mentora", textColor: .primary, color: .blue)
                 }
             }
             
@@ -63,7 +59,7 @@ struct ForumPostCard: View {
             }
             
             HStack {
-                TextField("Escreva um comentário", text: $newComment)
+                TextField("Escreva um comentário...", text: $newComment)
                 Button {
                     //
                 } label: {
@@ -76,6 +72,12 @@ struct ForumPostCard: View {
                     Text("Enviar")
                 }
                 .buttonStyle(.borderedProminent)
+            }
+            .padding(.horizontal)
+            .clipShape(Capsule())
+            .background {
+                Capsule()
+                    .stroke(.black)
             }
         }
         .padding()
