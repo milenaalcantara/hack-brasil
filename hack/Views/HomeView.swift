@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State var goesToForum = false
     @State var searchText: String = ""
     
     var body: some View {
@@ -24,9 +25,9 @@ struct HomeView: View {
                     Text("Suas Comunidades")
                         .font(.title)
                     
-                    HorizontalScrollView(title: "Mentorias")
+                    HorizontalScrollView(title: "Mentorias", goesToForum: $goesToForum)
                     
-                    HorizontalScrollView(title: "Tutoriais")
+                    HorizontalScrollView(title: "Tutoriais", goesToForum: $goesToForum)
                     
                 }
                 .padding()
@@ -51,6 +52,11 @@ struct HomeView: View {
         }
         .toolbarBackground(.corfundo, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
+        .fullScreenCover(isPresented: $goesToForum) {
+            NavigationStack {
+                ForumView()
+            }
+        }
 
     }
 }

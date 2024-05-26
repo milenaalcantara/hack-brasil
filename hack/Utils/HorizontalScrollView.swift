@@ -11,7 +11,8 @@ struct HorizontalScrollView: View {
     
     var title: String
     var groups: [String] = [".", ".", "."]
-    
+    @Binding var goesToForum: Bool
+
     var body: some View {
         
         Text(title)
@@ -20,8 +21,8 @@ struct HorizontalScrollView: View {
         ScrollView(.horizontal) {
             HStack {
                 ForEach(groups, id: \.self) { _ in
-                    NavigationLink {
-                        ForumView()
+                    Button {
+                        goesToForum = true
                     } label: {
                         GroupCard()
                     }
@@ -32,6 +33,6 @@ struct HorizontalScrollView: View {
     }
 }
 
-#Preview {
-    HorizontalScrollView(title: "Grupos")
-}
+//#Preview {
+//    HorizontalScrollView(title: "Grupos", goesToForum: false)
+//}
