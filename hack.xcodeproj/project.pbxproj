@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3668CF4B2C03CA8A00279637 /* hackdb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3668CF492C03CA8A00279637 /* hackdb.xcdatamodeld */; };
 		3696D2E62C034CAA00E9CDC0 /* hackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D2E52C034CAA00E9CDC0 /* hackApp.swift */; };
 		3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D2E72C034CAA00E9CDC0 /* ContentView.swift */; };
 		3696D2EA2C034CAB00E9CDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3696D2E92C034CAB00E9CDC0 /* Assets.xcassets */; };
@@ -14,12 +15,9 @@
 		3696D2F72C034CAB00E9CDC0 /* hackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D2F62C034CAB00E9CDC0 /* hackTests.swift */; };
 		3696D3012C034CAB00E9CDC0 /* hackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D3002C034CAB00E9CDC0 /* hackUITests.swift */; };
 		3696D3032C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */; };
-		369775482C038E9A00A3EABF /* hackdb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 369775462C038E9A00A3EABF /* hackdb.xcdatamodeld */; };
 		3697754B2C03902200A3EABF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697754A2C03902200A3EABF /* PersistenceController.swift */; };
 		3697754E2C0397E200A3EABF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697754D2C0397E200A3EABF /* CustomButton.swift */; };
 		369775522C039FF200A3EABF /* PresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369775512C039FF200A3EABF /* PresentationView.swift */; };
-		369775552C03A89400A3EABF /* UserDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369775542C03A89400A3EABF /* UserDBManager.swift */; };
-		3697755C2C03AAEA00A3EABF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697755B2C03AAEA00A3EABF /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3668CF4A2C03CA8A00279637 /* hackdb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hackdb.xcdatamodel; sourceTree = "<group>"; };
 		3696D2E22C034CAA00E9CDC0 /* hack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3696D2E52C034CAA00E9CDC0 /* hackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackApp.swift; sourceTree = "<group>"; };
 		3696D2E72C034CAA00E9CDC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,12 +49,9 @@
 		3696D2FC2C034CAB00E9CDC0 /* hackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3696D3002C034CAB00E9CDC0 /* hackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackUITests.swift; sourceTree = "<group>"; };
 		3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		369775472C038E9A00A3EABF /* hackdb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hackdb.xcdatamodel; sourceTree = "<group>"; };
 		3697754A2C03902200A3EABF /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		3697754D2C0397E200A3EABF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		369775512C039FF200A3EABF /* PresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationView.swift; sourceTree = "<group>"; };
-		369775542C03A89400A3EABF /* UserDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBManager.swift; sourceTree = "<group>"; };
-		3697755B2C03AAEA00A3EABF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +110,7 @@
 				3696D2E72C034CAA00E9CDC0 /* ContentView.swift */,
 				3696D2E92C034CAB00E9CDC0 /* Assets.xcassets */,
 				3696D2EB2C034CAB00E9CDC0 /* Preview Content */,
-				369775462C038E9A00A3EABF /* hackdb.xcdatamodeld */,
+				3668CF492C03CA8A00279637 /* hackdb.xcdatamodeld */,
 			);
 			path = hack;
 			sourceTree = "<group>";
@@ -147,7 +143,6 @@
 		369775492C038F2E00A3EABF /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				369775532C03A87A00A3EABF /* Protocols */,
 				3697754A2C03902200A3EABF /* PersistenceController.swift */,
 			);
 			path = Persistence;
@@ -169,18 +164,9 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		369775532C03A87A00A3EABF /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				369775542C03A89400A3EABF /* UserDBManager.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		3697755A2C03AAD400A3EABF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3697755B2C03AAEA00A3EABF /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,13 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				369775482C038E9A00A3EABF /* hackdb.xcdatamodeld in Sources */,
-				369775552C03A89400A3EABF /* UserDBManager.swift in Sources */,
+				3668CF4B2C03CA8A00279637 /* hackdb.xcdatamodeld in Sources */,
 				3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */,
 				369775522C039FF200A3EABF /* PresentationView.swift in Sources */,
 				3696D2E62C034CAA00E9CDC0 /* hackApp.swift in Sources */,
 				3697754B2C03902200A3EABF /* PersistenceController.swift in Sources */,
-				3697755C2C03AAEA00A3EABF /* User.swift in Sources */,
 				3697754E2C0397E200A3EABF /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -490,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -676,12 +660,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		369775462C038E9A00A3EABF /* hackdb.xcdatamodeld */ = {
+		3668CF492C03CA8A00279637 /* hackdb.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				369775472C038E9A00A3EABF /* hackdb.xcdatamodel */,
+				3668CF4A2C03CA8A00279637 /* hackdb.xcdatamodel */,
 			);
-			currentVersion = 369775472C038E9A00A3EABF /* hackdb.xcdatamodel */;
+			currentVersion = 3668CF4A2C03CA8A00279637 /* hackdb.xcdatamodel */;
 			name = hackdb.xcdatamodeld;
 			path = "/Users/milenaalcantara/Desktop/projects/hack-brasil/HackApp/hack-brasil/hack/hackdb.xcdatamodeld";
 			sourceTree = "<group>";

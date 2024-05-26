@@ -12,6 +12,10 @@ internal struct CoreDataManager {
     
     let persistenseContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "hackdb")
+        let description = container.persistentStoreDescriptions.first
+        description?.shouldMigrateStoreAutomatically = true
+        description?.shouldInferMappingModelAutomatically = true
+
         container.loadPersistentStores { storeDescription, error in
             if let error = error {
                 fatalError("Loading off store failed \(error)")
@@ -41,20 +45,25 @@ internal struct CoreDataManager {
         fetchRequest.predicate = NSPredicate(value: true)
 
         do {
+            saveContext()
             let count = try context.count(for: fetchRequest)
-            if count == 0 {
+            if count <= 1 {
+                let user3 = UserEntity(context: context)
+                user3.name = "Letícia Dutra"
+                user3.nickname = "letD"
+                user3.email = "letdutra@gmail.com"
+                user3.category = "mentora"
+                user3.password = "mentora1"
+                user3.level = "Silver IV"
+                
                 let user2 = UserEntity(context: context)
                 user2.name = "Ana Raiane"
                 user2.email = "ameninadogorro@gmail.com"
+                user2.nickname = "ameninadogorro"
                 user2.category = "mentorada"
                 user2.password = "mentorada1"
+                user2.level = "Silver"
                 
-                let user3 = UserEntity(context: context)
-                user3.name = "Ana Raiane"
-                user3.email = "ameninadogorro@gmail.com"
-                user3.category = "autora"
-                user3.password = "mentora1"
-
                 saveContext()
             }
         } catch {
