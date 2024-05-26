@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3668CF4B2C03CA8A00279637 /* hackdb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3668CF492C03CA8A00279637 /* hackdb.xcdatamodeld */; };
+		3668CF4E2C03E93D00279637 /* ChoosePerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3668CF4D2C03E93D00279637 /* ChoosePerfilView.swift */; };
 		3696D2E62C034CAA00E9CDC0 /* hackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D2E52C034CAA00E9CDC0 /* hackApp.swift */; };
 		3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D2E72C034CAA00E9CDC0 /* ContentView.swift */; };
 		3696D2EA2C034CAB00E9CDC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3696D2E92C034CAB00E9CDC0 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		3668CF4A2C03CA8A00279637 /* hackdb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hackdb.xcdatamodel; sourceTree = "<group>"; };
+		3668CF4D2C03E93D00279637 /* ChoosePerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePerfilView.swift; sourceTree = "<group>"; };
 		3696D2E22C034CAA00E9CDC0 /* hack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3696D2E52C034CAA00E9CDC0 /* hackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackApp.swift; sourceTree = "<group>"; };
 		3696D2E72C034CAA00E9CDC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				B60EC3E12C03934100987A3B /* ForumView.swift */,
 				B60EC3EE2C03B18E00987A3B /* HomeNavBar.swift */,
 				B60EC3F02C03B62700987A3B /* ForumNavBar.swift */,
+				3668CF4D2C03E93D00279637 /* ChoosePerfilView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				B60EC3E62C03968300987A3B /* ForumPostCard.swift in Sources */,
 				B60EC3F12C03B62700987A3B /* ForumNavBar.swift in Sources */,
 				B60EC3E02C03920300987A3B /* HorizontalScrollView.swift in Sources */,
+				3668CF4E2C03E93D00279637 /* ChoosePerfilView.swift in Sources */,
 				B60EC3E82C03A0B700987A3B /* CapsuleTag.swift in Sources */,
 				B60EC3E22C03934100987A3B /* ForumView.swift in Sources */,
 				3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */,

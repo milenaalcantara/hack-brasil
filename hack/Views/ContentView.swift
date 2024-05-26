@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
-    @State var count = 0
+    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.managedObjectContext) private var viewContext
+    @State var isPresented = true
+    @State var user: UserEntity?
+    
     var body: some View {
         
         TabView {
@@ -33,19 +38,12 @@ struct ContentView: View {
             .toolbarBackground(Color.corfundo, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
         }
-
-
-        
-        
-//        Button {
-//            increment()
-//        } label: {
-//            Text("count: \(count)")
-//        }
-    }
-
-    func increment() {
-        count+=1
+        .fullScreenCover(isPresented: $isPresented) {
+            ChoosePerfilView(
+                isPresented: $isPresented,
+                user: $user
+            )
+        }
     }
 }
 
