@@ -7,40 +7,56 @@
 
 import SwiftUI
 
+struct Level: Hashable {
+    var level: Int
+    var name: String
+}
+
 struct LevelsView: View {
     
-    var levels: [Int] = [1,2,3,4,5]
+    var levels: [Level] = [
+    Level(level: 1, name: "Publique sua comp!"),
+    Level(level: 2, name: "Compartilhe um spot de artefatos!"),
+    Level(level: 3, name: "Dê dicas para alguém"),
+    Level(level: 4, name: "Convide alguém para o seu mapa"),
+    Level(level: 5, name: "Faça as missões diárias"),
+
+    ]
     var currentLevel: Int = 1
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Level up")
-                .padding()
+            VStack (alignment: .leading) {
+                Text("Level up")
+                    .font(.headline)
+                Text("Conclua objetivos para aumentar o seu nível!")
+                    .font(.caption2)
+            }
+            .padding()
             
             ZStack {
-                Rectangle()
-                    .frame(height: 1)
-                    .foregroundColor(Color.gray)
-                    .padding(.bottom, 22)
+                Image("line")
+                    .resizable()
+                    .frame(height: 35)
+                    .padding(.bottom, 30)
+
                 
-                HStack(spacing: 30) {
+                HStack {
                     ForEach(levels, id: \.self) { level in
                         
                         VStack {
                             
-                            Image(systemName: "house")
+                            Image(level.level == 1 ? "openchest" : "closedchest")
                                 .frame(width: 45, height: 45)
-                                .clipShape(Circle())
-                                .background {
-                                    Circle()
-                                        .stroke(.black)
-                                }
-                                
+    
                             
-                            Text("texto")
+                            Text(level.name)
+                                .padding(4)
+                                .font(.caption2)
                         }
                     }
                 }
+                .padding(.horizontal)
             }
         }
     }
