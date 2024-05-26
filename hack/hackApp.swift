@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct hackApp: App {
+    let persistenceContainer = CoreDataManager.shared.persistenseContainer
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(
+                    \.managedObjectContext,
+                     persistenceContainer.viewContext
+                )
         }
     }
 }

@@ -16,6 +16,10 @@
 		3696D3032C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */; };
 		369775482C038E9A00A3EABF /* hackdb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 369775462C038E9A00A3EABF /* hackdb.xcdatamodeld */; };
 		3697754B2C03902200A3EABF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697754A2C03902200A3EABF /* PersistenceController.swift */; };
+		3697754E2C0397E200A3EABF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697754D2C0397E200A3EABF /* CustomButton.swift */; };
+		369775522C039FF200A3EABF /* PresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369775512C039FF200A3EABF /* PresentationView.swift */; };
+		369775552C03A89400A3EABF /* UserDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369775542C03A89400A3EABF /* UserDBManager.swift */; };
+		3697755C2C03AAEA00A3EABF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697755B2C03AAEA00A3EABF /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		3696D3022C034CAB00E9CDC0 /* hackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		369775472C038E9A00A3EABF /* hackdb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hackdb.xcdatamodel; sourceTree = "<group>"; };
 		3697754A2C03902200A3EABF /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		3697754D2C0397E200A3EABF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		369775512C039FF200A3EABF /* PresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationView.swift; sourceTree = "<group>"; };
+		369775542C03A89400A3EABF /* UserDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBManager.swift; sourceTree = "<group>"; };
+		3697755B2C03AAEA00A3EABF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,9 @@
 		3696D2E42C034CAA00E9CDC0 /* hack */ = {
 			isa = PBXGroup;
 			children = (
+				3697755A2C03AAD400A3EABF /* Model */,
+				3697754F2C039FAC00A3EABF /* Views */,
+				3697754C2C0397CA00A3EABF /* Components */,
 				369775492C038F2E00A3EABF /* Persistence */,
 				3696D2E52C034CAA00E9CDC0 /* hackApp.swift */,
 				3696D2E72C034CAA00E9CDC0 /* ContentView.swift */,
@@ -136,9 +147,42 @@
 		369775492C038F2E00A3EABF /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				369775532C03A87A00A3EABF /* Protocols */,
 				3697754A2C03902200A3EABF /* PersistenceController.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		3697754C2C0397CA00A3EABF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3697754D2C0397E200A3EABF /* CustomButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3697754F2C039FAC00A3EABF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				369775512C039FF200A3EABF /* PresentationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		369775532C03A87A00A3EABF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				369775542C03A89400A3EABF /* UserDBManager.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3697755A2C03AAD400A3EABF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3697755B2C03AAEA00A3EABF /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +338,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				369775482C038E9A00A3EABF /* hackdb.xcdatamodeld in Sources */,
+				369775552C03A89400A3EABF /* UserDBManager.swift in Sources */,
 				3696D2E82C034CAA00E9CDC0 /* ContentView.swift in Sources */,
+				369775522C039FF200A3EABF /* PresentationView.swift in Sources */,
 				3696D2E62C034CAA00E9CDC0 /* hackApp.swift in Sources */,
 				3697754B2C03902200A3EABF /* PersistenceController.swift in Sources */,
+				3697755C2C03AAEA00A3EABF /* User.swift in Sources */,
+				3697754E2C0397E200A3EABF /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
