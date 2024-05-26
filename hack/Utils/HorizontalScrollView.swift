@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct HorizontalScrollView: View {
+    
+    var title: String
+    var groups: [String] = [".", ".", "."]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Text(title)
+        
+        ScrollView(.horizontal) {
+            HStack {
+                ForEach(groups, id: \.self) { _ in
+                    VStack {
+                        Color.gray
+                            .frame(width: 234, height: 170)
+                    }
+                }
+            }
+        }
+        .scrollIndicators(.hidden)
     }
 }
 
 #Preview {
-    HorizontalScrollView()
+    HorizontalScrollView(title: "Grupos")
 }
