@@ -15,13 +15,16 @@ struct HorizontalScrollView: View {
     var body: some View {
         
         Text(title)
-            .foregroundStyle(.kelpwhite)
-            .font(.title)
+            .font(.headline)
         
         ScrollView(.horizontal) {
             HStack {
                 ForEach(groups, id: \.self) { _ in
-                    GroupCard()
+                    NavigationLink {
+                        ForumView()
+                    } label: {
+                        GroupCard()
+                    }
                 }
             }
         }

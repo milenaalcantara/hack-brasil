@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ForumNavBar: View {
+    
+    var body: some View {
+        
+        VStack {
+            Spacer()
 
-        var body: some View {
             HStack {
                 Button { } label: {
                     Image(systemName: "calendar.badge.plus")
@@ -25,13 +29,17 @@ struct ForumNavBar: View {
                 }
                 .frame(height: 200)
             }
-            .foregroundStyle(.kelpwhite)
-            .font(.system(size: 25))
-            .padding(.horizontal)
-            .frame(height: 56)
-            .frame(maxWidth: .infinity)
-            .background(.corfundo)
         }
+        .foregroundStyle(.kelpwhite)
+        .font(.system(size: 25))
+        .padding(.horizontal)
+        .frame(height: 96)
+        .frame(maxWidth: .infinity)
+        .background(.corfundo)
+//        .background(Color.corfundo.shadow(radius: 5, x: 0, y: 5))
+        
+
+    }
 }
 
 struct SwiftUIWrapper<T: View>: UIViewControllerRepresentable {

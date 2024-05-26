@@ -13,14 +13,16 @@ struct ContentView: View {
         
         TabView {
             Group {
-                ForumView()
-                    .tabItem {
-                        Label("Comunidades", systemImage: "person.2.fill")
-                    }
                 
                 NavigationStack {
                     HomeView()
                 }
+                .tabItem {
+                    Label("Comunidades", systemImage: "person.2.fill")
+                }
+                
+                
+                Text("")
                 .tabItem {
                     Label("Explorar", systemImage: "sparkle.magnifyingglass")
                 }
@@ -33,17 +35,17 @@ struct ContentView: View {
             .toolbarBackground(Color.corfundo, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
         }
-
-
         
         
-//        Button {
-//            increment()
-//        } label: {
-//            Text("count: \(count)")
-//        }
+        
+        
+        //        Button {
+        //            increment()
+        //        } label: {
+        //            Text("count: \(count)")
+        //        }
     }
-
+    
     func increment() {
         count+=1
     }

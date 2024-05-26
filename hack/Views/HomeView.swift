@@ -17,17 +17,12 @@ struct HomeView: View {
         ZStack{
 //            Color.corfundo
 //                .ignoresSafeArea()
-            
-            VStack {
-                HomeNavBar()
-                    .padding(.top)
-                    .ignoresSafeArea()
+    
                 
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 10) {
                     
                     Text("Suas Comunidades")
-                        .foregroundStyle(.kelpwhite)
-                        .font(.largeTitle)
+                        .font(.title)
                     
                     HorizontalScrollView(title: "Mentorias")
                     
@@ -37,11 +32,26 @@ struct HomeView: View {
                 .padding()
                 
                 Spacer()
-                
-                //        .searchable(text: $searchText)
-                
+
+        }
+        .navigationTitle(" ")
+        .toolbar {
+            ToolbarItem (placement: .topBarLeading) {
+                UserIdView(textColor: .kelpwhite, capsuleColor: .accentColor)
+            }
+            
+            ToolbarItem (placement: .topBarTrailing) {
+                Button {
+                } label: {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundStyle(.cordestaque)
+                        .font(.system(size: 25))
+                }
             }
         }
+        .toolbarBackground(.corfundo, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+
     }
 }
 

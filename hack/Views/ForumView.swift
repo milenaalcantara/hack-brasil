@@ -13,34 +13,59 @@ struct ForumView: View {
     
     var body: some View {
         VStack {
-            ForumNavBar()
+//            ForumNavBar()
+//                .ignoresSafeArea()
             
             ZStack {
-//                Color.corfundo
-//                    .ignoresSafeArea()
+                //                Color.corfundo
+                //                    .ignoresSafeArea()
                 
                 List {
                     LevelsView()
                         .listRowInsets(EdgeInsets())
                         .padding(.bottom)
                         .listRowBackground(Color.clear)
-
+                    
                     ForEach(forumPosts, id: \.self) { post in
                         ForumPostCard()
                             .listRowBackground(Color.clear)
                             .listRowInsets(EdgeInsets())
                             .padding(.bottom)
                     }
+                    
                 }
                 .listStyle(.plain)
                 .listRowSeparator(.hidden)
                 .listRowInsets(.none)
-                
             }
         }
+        .navigationTitle(" ")
+        .toolbar {
+            ToolbarItem (placement: .topBarLeading) {
+                Button { } label: {
+                    Image(systemName: "calendar.badge.plus")
+                }
+            }
+            
+            ToolbarItem (placement: .topBarTrailing) {
+                HStack {
+                    Button { } label: {
+                        Image(systemName: "magnifyingglass")
+                    }
+                    
+                    Button { } label: {
+                        Image(systemName: "bubble.left")
+                    }
+                }
+            }
+        }
+        .toolbarBackground(.corfundo, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 
 #Preview {
-    ForumView()
+    NavigationStack {
+        ForumView()
+    }
 }
