@@ -8,31 +8,25 @@
 import SwiftUI
 
 struct HorizontalScrollView: View {
-    
     var title: String
-    var groups: [String] = [".", ".", "."]
     @Binding var goesToForum: Bool
 
     var body: some View {
-        
         Text(title)
             .font(.headline)
         
         ScrollView(.horizontal) {
             HStack {
-                ForEach(groups, id: \.self) { _ in
+                ForEach(1...3, id: \.self) { _ in
                     Button {
                         goesToForum = true
                     } label: {
                         GroupCard()
                     }
+                    .padding(5)
                 }
             }
         }
         .scrollIndicators(.hidden)
     }
 }
-
-//#Preview {
-//    HorizontalScrollView(title: "Grupos", goesToForum: false)
-//}

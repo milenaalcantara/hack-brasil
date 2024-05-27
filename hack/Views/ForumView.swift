@@ -13,13 +13,7 @@ struct ForumView: View {
     
     var body: some View {
         VStack {
-//            ForumNavBar()
-//                .ignoresSafeArea()
-            
             ZStack {
-                //                Color.corfundo
-                //                    .ignoresSafeArea()
-                
                 List {
                     LevelsView()
                         .listRowInsets(EdgeInsets())

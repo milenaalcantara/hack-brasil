@@ -13,29 +13,29 @@ struct HomeView: View {
     @State var searchText: String = ""
     
     var body: some View {
-        
-        
-        ZStack{
-//            Color.corfundo
-//                .ignoresSafeArea()
-    
+        ZStack {
+            VStack(alignment: .leading, spacing: 10) {
                 
-                VStack(alignment: .leading, spacing: 10) {
-                    
-                    Text("Suas Comunidades")
-                        .font(.title)
-                    
-                    HorizontalScrollView(title: "Mentorias", goesToForum: $goesToForum)
-                    
-                    HorizontalScrollView(title: "Tutoriais", goesToForum: $goesToForum)
-                    
-                }
-                .padding()
+                Text("Suas Comunidades")
+                    .font(.title)
                 
-                Spacer()
+                HorizontalScrollView(title: "Mentorias", goesToForum: $goesToForum)
+                
+                HorizontalScrollView(title: "Tutoriais", goesToForum: $goesToForum)
+                
+            }
+            .padding()
+            
+            Spacer()
 
         }
         .navigationTitle(" ")
+        
+        .fullScreenCover(isPresented: $goesToForum) {
+            NavigationStack {
+                ForumView()
+            }
+        }
         .toolbar {
             ToolbarItem (placement: .topBarLeading) {
                 UserIdView(textColor: .kelpwhite, capsuleColor: .accentColor)
@@ -52,11 +52,6 @@ struct HomeView: View {
         }
         .toolbarBackground(.corfundo, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
-        .fullScreenCover(isPresented: $goesToForum) {
-            NavigationStack {
-                ForumView()
-            }
-        }
 
     }
 }

@@ -14,20 +14,17 @@ struct UserIdView: View {
     var body: some View {
         HStack {
             Image("avatar")
-                .frame(width: 45, height: 45)
-                .clipShape(Circle())
-                
-            VStack (spacing: 5) {
-               Text("Username")
+              .frame(width: 45, height: 45)
+              .clipShape(Circle())
+              .padding(.vertical, 12)
+            
+            VStack (alignment: .leading, spacing: 5) {
+               Text("ameninadogorro")
                     .foregroundStyle(textColor)
                     .font(.headline)
-                
+
                 CapsuleTag(text: "Mentora", textColor: .primary, color: capsuleColor)
             }
         }
     }
 }
-//
-//#Preview {
-//    UserIdView()
-//}
